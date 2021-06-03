@@ -23,7 +23,6 @@
     "rules": {
         "prettier/prettier": "error",
         "camelcase": "off",
-        // "import/no-unresolved": "error",
         "@typescript-eslint/naming-convention": [
         "error",
         {
@@ -42,13 +41,6 @@
         "no-useless-constructor": "off",
         "no-empty-function": "off",
         "lines-between-class-members": "off",
-        // "import/extensions": [
-        //     "error",
-        //     "ignorePackages",
-        //     {
-        //         "ts": "never"
-        //     }
-        // ],
         "import-helpers/order-imports": [
             "warn",
             {
@@ -56,11 +48,7 @@
                 "groups": ["module", "/^@shared/", ["parent", "sibling", "index"]],
                 "alphabetize": { "order": "asc", "ignoreCase": true }
             }
-        ],
-        // "import/no-extraneous-dependencies": [
-        //     "error",
-        //     { "devDependencies": ["**/*.spec.js"] }
-        // ]
+        ]
     },
     "settings": {
         "import/resolver": {

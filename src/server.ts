@@ -1,10 +1,13 @@
-import express, { json, request } from 'express'
-import { categoriesRoutes } from './routes/categories.routes'
+import express from "express";
 
-const app = express()
+import { categoriesRoutes } from "./routes/categories.routes";
+import { specificationsRoutes } from "./routes/specification.routes";
 
-app.use(express.json())
+const app = express();
 
-app.use('/categories', categoriesRoutes)
+app.use(express.json());
 
-app.listen(3333, () => console.log("server is running"))
+app.use("/categories", categoriesRoutes);
+app.use("/specifications", specificationsRoutes);
+
+app.listen(3333, () => console.log("server is running"));
